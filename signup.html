@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>
+
+      GetLocally | Sign Up
+
+   </title>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+   <link rel="icon" href="/static/images/logos/favicon.ico" type="image/x-icon">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" type="text/css" href="css/sign.min.css" />
+   <link rel="stylesheet" type="text/css" href="css/simple_layout.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+   <div class="static-single-form-wrapper plB">
+      <div class="text-center im-branding">
+         <a href="index.html"> <img src="img/GetLocally.png" width="115" alt="">
+        </a>
+      </div>
+      <div class="container">
+
+
+
+         <div class="col-sm-6">
+            <div class="secondary-block">
+               <h2>Already signed up?</h2>
+               <p class="text-muted">
+               </p>
+
+               <a href="signin.html" class="btn btn-default big-font">
+          LOG IN WITH EMAIL & PASSWORD
+        </a>
+
+               <div class="clear"></div>
+
+               <a href="/social-login/facebook" class="fb-link"><span class="fa fa-facebook"></span> Login with Facebook</a>
+
+               <span class="text-muted divider">|</span>
+
+               <a href="/social-login/google" class="google-link"><span style="font-weight:800;" class="fa fa-google-plus"></span> Login with Google</a>
+            </div>
+         </div>
+         <div class="col-sm-6">
+            <div class="form-container">
+               <h2>Sign Up</h2>
+
+               <form class="mmT" action="signup.php" method="POST" name="register_user_form">
+                  <div style="display:none;">
+                     <input id="csrf_token" name="csrf_token" type="hidden" value="1488769100##2e93c03cef50cc3cbe6ef7c0657ca264238063ba">
+                     <input id="next" name="next" type="hidden" value="">
+                  </div>
+
+                  <span class="input input--hoshi register-email input--filled">
+                <input autocomplete="off" class='
+
+        full-input
+
+ input__field input__field--hoshi' id="email" name="email" type="text">
+                <label for="email" for="email" class='input__label input__label--hoshi'>
+                    <span class="input__label-content input__label-content--hoshi">Email</span>
+                  </label>
+
+
+
+                  </span>
+
+                  <span class="input input--hoshi register-password input--filled">
+                <input autocomplete="off" class='
+
+        full-input
+
+ input__field input__field--hoshi' id="password" name="password" type="password">
+                <label class="input__label input__label--hoshi" for="register-password">
+                  <span class="input__label-content input__label-content--hoshi">Password</span>
+                  </label>
+
+
+
+                  </span>
+
+                  <div class="clear"></div>
+
+
+
+
+                  <div class="clear"></div>
+
+                  <button class="btn btn-primary big-font btn-block" style= "margin-top: 20px;">SIGN UP</button>
+               </form>
+
+               <div class="wid-footer">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <a id="fb-signup" class="btn btn-default fb-login btn-block" href="/social-login/facebook">
+                           <span class="fa fa-facebook"></span> Sign Up via Facebook
+                        </a>
+                     </div>
+                     <div class="col-sm-6">
+                        <a id="google-signup" class="btn btn-default google-login btn-block" href="/social-login/google">
+                           <span style="font-weight:800;" class="fa fa-google-plus"></span> Sign Up via Google
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+
+      </div>
+   </div>
+
+   <script type="text/javascript" src="js/vendor.js"></script>
+
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $('.input__field--hoshi').change(function () {
+            if ($(this).val()) {
+               if (!$(this).parent().hasClass('input--filled'))
+                  $(this).parent().addClass('input--filled');
+            } else {
+               if ($(this).parent().hasClass('input--filled'))
+                  $(this).parent().removeClass('input--filled');
+            }
+
+         });
+      });
+   </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>
+
+      GetLocally | Sign In
+
+   </title>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+   <link rel="icon" href="/static/images/logos/favicon.ico" type="image/x-icon">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" type="text/css" href="css/sign.min.css" />
+   <link rel="stylesheet" type="text/css" href="css/simple_layout.min.css" />
+</head>
+
+<body>
+   <div class="static-single-form-wrapper plB">
+      <div class="text-center im-branding">
+         <a href="index.html">
+
+            <img src="img/GetLocally.png" width="115" alt="">
+         </a>
+      </div>
+      <div class="container">
+         <div class="col-sm-6">
+            <div class="form-container">
+               <h2>Login</h2>
+               <form class="mmT" id="login-form" action="signin.php" method="POST" role="form">
+                  <div style="display:none;">
+                     <input id="csrf_token" name="csrf_token" type="hidden" value="1488769102##49d2e65165c6d048d2266ae8db87a899e5c7a3c1">
+                     <input id="next" name="next" type="hidden" value="">
+                  </div>
+
+
+                  <!-- for input focus use this class "input--filled" -->
+                  <span class="input input--hoshi register-email input--filled">
+                <input autocomplete="off" class='
+
+        full-input
+
+ input__field input__field--hoshi' id="email" name="email" type="text"/>
+
+                <label for="email" for="email" class='
+
+
+
+ input__label input__label--hoshi'>
+                    <span class="input__label-content input__label-content--hoshi">Email</span>
+                  </label>
+
+
+
+                  </span>
+
+                  <span class="input input--hoshi register-password input--filled">
+                <input autocomplete="off" class='full-input input__field input__field--hoshi' id="password" name="password" type="password"/>
+
+                <label class="
+
+
+
+ input__label input__label--hoshi" for="register-password">
+                  <span class="input__label-content input__label-content--hoshi">Password</span>
+                  </label>
+
+
+
+                  </span>
+
+
+                  <div class="clear"></div>
+
+                  <div class="input-block">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <span class="checkbox">
+                        <input id="remember" name="remember" type="checkbox" value="y">
+                        <span class="fake-checkbox"></span>
+                           </span>
+                           <label for="remember" class="fnt-verylight-navyblue">
+                              Remember me?
+                           </label>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                           <a href="/reset">Forgot passsword?</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+
+
+
+
+
+                  <div class="clear"></div>
+
+                  <button class="btn btn-primary big-font btn-block" style= "margin-top: 20px;">
+                     LOGIN
+                  </button>
+               </form>
+
+               <div class="wid-footer">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <a id="fb-login" class="btn btn-default fb-login btn-block" href="/social-login/facebook">
+                           <span class="fa fa-facebook"></span> Login with Facebook
+                        </a>
+                     </div>
+                     <div class="col-sm-6">
+                        <a id="google-login" class="btn btn-default google-login btn-block" href="/social-login/google">
+                           <span style="font-weight:800;" class="fa fa-google-plus"></span> Login with Google
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <div class="col-sm-6">
+            <div class="secondary-block">
+               <h2>Don’t have an account?</h2>
+               <p class="text-muted">
+                  Create an account for free
+               </p>
+
+               <a href="signup.html" class="btn btn-default big-font">
+            SIGN UP WITH EMAIL & PASSWORD
+        </a>
+
+               <div class="clear"></div>
+
+               <a href="/social-login/facebook" class="fb-link"><span class="fa fa-facebook"></span> Sign Up with Facebook</a>
+
+               <span class="text-muted divider">|</span>
+
+               <a href="/social-login/google" class="google-link"><span style="font-weight:800;" class="fa fa-google-plus"></span> Sign Up with Google</a>
+            </div>
+         </div>
+
+
+
+      </div>
+   </div>
+
+   <script type="text/javascript" src="js/vendor.js"></script>
+
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $('.input__field--hoshi').change(function () {
+            if ($(this).val()) {
+               if (!$(this).parent().hasClass('input--filled'))
+                  $(this).parent().addClass('input--filled');
+            } else {
+               if ($(this).parent().hasClass('input--filled'))
+                  $(this).parent().removeClass('input--filled');
+            }
+
+         });
+      });
+   </script>
+
+
+</body>
+
+</html>
