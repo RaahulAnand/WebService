@@ -1,0 +1,180 @@
+body {
+   background: #fff
+}
+
+.jumbotron-seller {
+   background-color: #3e466e;
+   color: white;
+   display: inline-block;
+   width: 100%
+}
+
+.jumbotron-seller .jumbotron-container {
+   margin-top: 40px;
+   margin-bottom: 40px
+}
+
+.jumbotron-seller .jumbotron-container form {
+   border: 2px dashed rgba(255, 255, 255, 0.1);
+   padding: 20px 10px;
+   margin-top: 15px
+}
+
+.jumbotron-seller .jumbotron-container form .btn-primary {
+   margin: 10px 0 0
+}
+
+.jumbotron-seller .banner-desc {
+   font-size: 37px;
+   font-weight: lighter
+}
+
+.jumbotron-seller .seller-btn {
+   min-width: 250px
+}
+
+.jumbotron-seller .seller-input {
+   min-width: 250px;
+   border-top: none;
+   padding-left: 10px;
+   color: black
+}
+
+.reach-user>h3 {
+   color: #3e456f;
+   margin: 50px 0 30px;
+   font-size: 30px;
+   font-weight: bold
+}
+
+.reach-user .im-reg-circle {
+   border: 2px solid #ffa400;
+   display: inline-block;
+   width: 150px;
+   height: 150px;
+   max-width: 100%;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%
+}
+
+.reach-user .im-reg-circle>.fa {
+   font-size: 64px;
+   color: #ffa400;
+   display: inline-block;
+   width: 100%;
+   line-height: 146px;
+   max-height: 137px
+}
+
+.reach-user .im-reg-circle>.step-num {
+   display: inline-block;
+   background: #fff;
+   padding: 0 10px;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+   color: #3e456f;
+   font-size: 14px;
+   font-weight: bold
+}
+
+.reach-user .chapter-caption {
+   color: #3e456f;
+   margin: 7px 0 30px;
+   font-size: 14px;
+   font-weight: bold
+}
+
+hr {
+   margin: 20px 0 50px;
+   border-top: 1px solid #d9dfe4
+}
+
+#customerTestimonials {
+   margin: 20px 0 50px;
+   background: #fff;
+   border: 1px solid #e5e5e5;
+   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 0;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 0;
+   box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 0
+}
+
+h4.section-title {
+   color: #3e456f;
+   margin: 0 0 15px;
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: center
+}
+
+.metric-data {
+   text-transform: uppercase;
+   color: #3e456f;
+   font-weight: bolder;
+   font-size: 14px;
+   text-align: center
+}
+
+.metric-data .big-val {
+   font-size: 55px;
+   line-height: 45px
+}
+
+.metric-data .text-muted {
+   color: #9b9fb4;
+   display: inline-block;
+   width: 100%;
+   font-weight: normal;
+   margin: 20px 0 30px;
+   line-height: 18px
+}
+
+.chapter-img {
+   height: 150px;
+   width: 150px;
+   padding-bottom: 10px
+}
+
+.panel-default>.panel-heading {
+   background-color: #fff
+}
+
+.panel-title {
+   font-size: 15px
+}
+
+.panel-body {
+   padding: 15px 15px 15px 35px
+}
+
+.navbar {
+   background-color: #3e466e;
+   color: #fff;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   border-radius: 0
+}
+
+.navbar .nav>li>a:focus,
+.navbar .nav>li>a:hover,
+.navbar .product-menu:hover>a,
+.navbar .dropdown:hover>a {
+   background: #474f73
+}
+
+.navbar a {
+   color: #fff
+}
+
+.navbar.navbar-fixed-top .nav>li>a:focus,
+.navbar.navbar-fixed-top .nav>li>a:hover,
+.navbar.navbar-fixed-top .product-menu:hover>a,
+.navbar.navbar-fixed-top .dropdown:hover>a {
+   background: #eee
+}
+
+.navbar.navbar-fixed-top a {
+   color: #2c3d4f
+}
